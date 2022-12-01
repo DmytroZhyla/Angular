@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 20vh;
+    height: 10vh;
+    background: darkred;
+    cursor: pointer;
+    margin: 0 2%;
+  &:disabled{
+      cursor: not-allowed;
+      background: #815454;
+
+  }
+  }
+}
