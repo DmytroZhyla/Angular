@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 7vh;
+  background: #f1f5f8;
+
+
+  mat-form-field{
+    margin-right: 6%;
+    margin-bottom: 6%;
+  }
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+}
+

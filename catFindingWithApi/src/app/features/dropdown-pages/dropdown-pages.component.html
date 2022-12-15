@@ -1,0 +1,11 @@
+<div class="container">
+
+  <mat-form-field appearance="fill">
+    <mat-label>Select </mat-label>
+    <mat-select  [(value)]="mat_select" (valueChange)="logMatSelect()" >
+      <mat-option *ngFor="let numbers of numberOfPages" [value]=numbers>{{numbers}}</mat-option>
+    </mat-select>
+    <mat-hint align="end">Choose and then Press Load</mat-hint>
+  </mat-form-field>
+
+</div>

@@ -7,8 +7,11 @@ export namespace stopwatchActions {
   )
 
   export const countChangeNumber = createAction(
-    '[Stopwatch Page] Change number by value ',
+    '[Stopwatch Buttons] Change number by value ',
     props<{number:number}>()
   )
 
+  export const countToZero = createAction(
+    '[Stopwatch Page] Change to ZERO'
+  )
 }

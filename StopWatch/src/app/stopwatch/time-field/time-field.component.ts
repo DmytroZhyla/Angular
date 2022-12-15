@@ -19,12 +19,6 @@ export class TimeFieldComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.time$.subscribe((res)=>console.log(res))
-  }
-
-  selectTime(){
-    this.time$ = this.store$.select(selectStopwatchCounter)
-    console.log(this.time$)
   }
 
 }

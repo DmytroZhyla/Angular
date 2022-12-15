@@ -1,5 +1,9 @@
 <div class="container">
-  <button [disabled]="startStopStatus">+15S</button>
-  <button (click)="startStopStopwatch()">{{startStopText}}</button>
-  <button (click)="" [disabled]="startStopStatus">+15S</button>
+  <div class="button__container">
+    <button (click)="timeChanging(rangerTime,false)" [disabled]="startStopStatus">-{{rangerTime/secondsInMinutes}}M</button>
+    <button (click)="startStopStopwatch()">{{startStopText}}</button>
+    <button (click)="timeChanging(rangerTime,true)"  [disabled]="startStopStatus">+{{rangerTime/secondsInMinutes}}M</button>
+  </div>
+    <input class="range" type="range" min="60" max="3600" step="60" (input)="rangeChanging($event)">
 </div>
+

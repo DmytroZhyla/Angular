@@ -1,9 +1,8 @@
 .container {
-  margin: 7% 20%;
+  margin: 7% 10% 3% 10%;
   height: 30vh;
   border: 5px solid;
   border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
-
   &__time {
     height: 20vh;
     margin: 2% 5%;

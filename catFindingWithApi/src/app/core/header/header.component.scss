@@ -1,0 +1,23 @@
+.container{
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f8;
+
+  app-cat-breeds-dropdown{
+    margin-top: 2% ;
+  }
+
+  &__breed{
+    margin: 0 2%;
+  }
+
+  &__load{
+    margin: 0 2%;
+  }
+}
+.example-form-field {
+  width: 200px;
+}

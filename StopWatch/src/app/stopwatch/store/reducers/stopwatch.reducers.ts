@@ -1,6 +1,5 @@
 import {createReducer, on} from "@ngrx/store";
 import {stopwatchActions} from "../actions/stopwatch.actions";
-import {state} from "@angular/animations";
 
 
 export const initialState= {
@@ -20,5 +19,11 @@ export const stopwatchReducers = createReducer(
     ({
       ...state,
       counter: state.counter + number
-    }))
+    })),
+
+  on(stopwatchActions.countToZero,
+    state => ({
+      ...state,
+      counter: (state.counter - state.counter)
+    })),
 );

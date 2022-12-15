@@ -1,0 +1,9 @@
+<div class="container">
+  <mat-form-field appearance="fill">
+    <mat-label>Select Breed</mat-label>
+    <mat-select  [(value)]="breeds_select" (valueChange)="logMatSelect()" >
+      <mat-option value='All'>All</mat-option>
+      <mat-option *ngFor="let breeds of breeds$ | async" [value]=breeds.id>{{breeds.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
